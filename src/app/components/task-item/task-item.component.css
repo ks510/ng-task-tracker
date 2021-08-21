@@ -6,11 +6,10 @@
 
 .task-container {
   box-shadow: 0 8px 32px 0 rgba(75, 75, 75, 0.15);
-  background: rgba( 34, 34, 34, 0.35 );
+  background: rgba( 3, 4, 25, 0.40 );
   backdrop-filter: blur( 5.0px );
   -webkit-backdrop-filter: blur( 5.0px );
-  border-radius: 20px;
-  border: 1px solid  rgba( 99, 99, 99, 0.35 );
+  border-radius: 10px;
 }
 
 .task.reminder {
