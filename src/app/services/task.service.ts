@@ -23,12 +23,12 @@ export class TaskService {
   }
 
   deleteTask(task: Task): Observable<Task> {
-    const url = `${environment.backendEndPoint}/${task._id}`;
+    const url = `${environment.backendEndPoint}/${task.id}`;
     return this.http.delete<Task>(url);
   }
 
   updateTaskReminder(task: Task): Observable<Task> {
-    const url = `${environment.backendEndPoint}/${task._id}`;
+    const url = `${environment.backendEndPoint}/${task.id}`;
     return this.http.put<Task>(url, task, httpOptions);
   }
 

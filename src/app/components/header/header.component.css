@@ -1,9 +1,6 @@
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    padding: 30px;
-    background: rgb(170,0,170);
-  background: linear-gradient(90deg, rgba(170,0,170,1) 0%, rgba(204,0,0,1) 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
