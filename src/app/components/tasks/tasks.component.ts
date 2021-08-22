@@ -5,7 +5,7 @@ import { Task } from '../../Task';
 @Component({
   selector: 'app-tasks',
   templateUrl: './tasks.component.html',
-  styleUrls: ['./tasks.component.css']
+  styleUrls: ['./tasks.component.scss']
 })
 export class TasksComponent implements OnInit {
   tasks: Task[] = [];
@@ -20,7 +20,7 @@ export class TasksComponent implements OnInit {
   deleteTask(task: Task) {
     this.taskService
       .deleteTask(task)
-      .subscribe(() => (this.tasks = this.tasks.filter(t => t._id !== task._id)))
+      .subscribe(() => (this.tasks = this.tasks.filter(t => t.id !== task.id)))
   }
 
   toggleReminder(task: Task) {

@@ -1,9 +1,9 @@
-<div [ngClass]="task.reminder ? 'reminder' : 'placeholder'" class="task" (dblclick)="onToggle(task)">
+<div [ngClass]="task.reminder ? 'reminder' : 'placeholder'" class="task task-container" (dblclick)="onToggle(task)">
   <h3>
     {{ task.text }}
     <fa-icon
       (click)="onDelete(task)"
-      [ngStyle]="{ color : 'red'}"
+      [ngStyle]="{ color : '#cc0000'}"
       [icon]="faTimes"
     ></fa-icon>
   </h3>

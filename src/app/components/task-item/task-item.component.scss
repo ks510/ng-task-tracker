@@ -1,0 +1,28 @@
+.task {
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.task-container {
+  //box-shadow: 0 8px 32px 0 rgba(75, 75, 75, 0.15);
+  backdrop-filter: blur(16px) saturate(120%), opacity(90%);
+  -webkit-backdrop-filter: blur(16px) saturate(120%);
+  background-color: rgba(12, 2, 22, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.task.reminder {
+  border-left: 5px solid #AF0077;
+}
+
+.task.placeholder {
+  border-left: 5px solid rgba(255, 255, 255, 0.1);
+}
+
+.task h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

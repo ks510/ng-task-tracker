@@ -1,0 +1,19 @@
+.add-form {
+  margin-bottom: 40px;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+mat-slide-toggle {
+  margin: 15px 0;
+}
+
+:host ::ng-deep .mat-form-field.mat-form-field-invalid .mat-form-field-label {
+  color: #cc0000;
+}
+
+:host ::ng-deep .mat-form-field.mat-form-field-invalid .mat-form-field-ripple, .mat-form-field.mat-form-field-invalid .mat-form-field-ripple.mat-accent {
+  background-color: #cc0000;
+}
