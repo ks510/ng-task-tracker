@@ -18,6 +18,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 
 const appRoutes: Routes = [
   { path: '', component: TasksComponent },
@@ -46,7 +47,8 @@ const appRoutes: Routes = [
     MatInputModule,
     ReactiveFormsModule,
     MatSlideToggleModule,
-    MatIconModule
+    MatIconModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
