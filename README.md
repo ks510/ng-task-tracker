@@ -19,8 +19,11 @@ Backend is hosted on App Engine.
 
 ## Coming Soon...
 
+- Edit tasks after adding
 - User accounts to store tasks
 - Option to "complete" the task as well as deleting
 - Completed tasks history
 - Date & time picker
 - Push notifications over browser
+- Animations/transitions
+- Custom scroll bar

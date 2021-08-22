@@ -1,11 +1,14 @@
 <div [ngClass]="task.reminder ? 'reminder' : 'placeholder'" class="task task-container" (dblclick)="onToggle(task)">
-  <h3>
-    {{ task.text }}
-    <fa-icon
-      (click)="onDelete(task)"
-      [ngStyle]="{ color : '#cc0000'}"
-      [icon]="faTimes"
-    ></fa-icon>
-  </h3>
-  <p>{{ task.day_time }}</p>
+  <div>
+    <h3>{{ task.text }}</h3>
+    <p>{{ task.day_time }}</p>
+  </div>
+  <div [ngStyle]="{ 'align-self': 'center'}">
+    <button mat-icon-button color="primary">
+      <mat-icon>edit</mat-icon>
+    </button>
+    <button mat-icon-button color="primary">
+      <mat-icon>close</mat-icon>
+    </button>
+  </div>
 </div>
