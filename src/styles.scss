@@ -35,14 +35,49 @@ $md-white: (
   )
 );
 
+$red: (
+  50 : #cc0000,
+  100 : #cc0000,
+  200 : #cc0000,
+  300 : #cc0000,
+  400 : #cc0000,
+  500 : #cc0000,
+  600 : #cc0000,
+  700 : #cc0000,
+  800 : #cc0000,
+  900 : #cc0000,
+  A100 : #cc0000,
+  A200 : #cc0000,
+  A400 : #cc0000,
+  A700 : #cc0000,
+  contrast: (
+    50 : #cc0000,
+    100 : #cc0000,
+    200 : #cc0000,
+    300 : #cc0000,
+    400 : #cc0000,
+    500 : #cc0000,
+    600 : #cc0000,
+    700 : #cc0000,
+    800 : #cc0000,
+    900 : #cc0000,
+    A100 : #cc0000,
+    A200 : #cc0000,
+    A400 : #cc0000,
+    A700 : #cc0000,
+  )
+);
+
 $ng-task-tracker-theme: mat.define-dark-theme((
   color: (
     primary: $md-white,
-    accent: $md-white
+    accent: $md-white,
+    //warn: $red
   )
 ));
 
 @include mat.all-component-themes($ng-task-tracker-theme);
+
 
 * {
   box-sizing: border-box;
