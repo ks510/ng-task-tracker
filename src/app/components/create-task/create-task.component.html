@@ -1,1 +1,18 @@
-<p>create-task works!</p>
+<div class='glass-container'>
+  <h1>Create a new task!</h1>
+  <form class="add-form" (ngSubmit)="onSubmit()" [formGroup]="this.form">
+    <mat-form-field appearance="standard">
+      <mat-label>Task</mat-label>
+      <input formControlName="text" matInput placeholder="Add Task">
+    </mat-form-field>
+  
+    <mat-form-field appearance="standard">
+      <mat-label>Day & Time</mat-label>
+      <input formControlName="day" matInput placeholder="Add Day & Time">
+    </mat-form-field>
+  
+    <mat-slide-toggle formControlName="reminder">Set Reminder</mat-slide-toggle>
+  
+    <input type="submit" value="Save Task" class="btn btn-block"/>
+  </form>
+</div>
