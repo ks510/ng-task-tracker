@@ -4,7 +4,7 @@
       *ngIf="hasRoute('/')"
       icon="{{showAddTask ? 'add' : 'close'}}" 
       text="{{showAddTask ? 'Close' : 'Add'}}" 
-      (btnClick)="toggleAddTask()"
+      (btnClick)="openCreateTaskDialog()"
     ></app-button>
 </header>
 

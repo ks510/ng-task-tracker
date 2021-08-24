@@ -4,7 +4,7 @@
     <p>{{ task.day_time }}</p>
   </div>
   <div [ngStyle]="{ 'align-self': 'center'}">
-    <button mat-icon-button color="primary" >
+    <button mat-icon-button color="primary" (click)="onEdit(task)">
       <mat-icon>edit</mat-icon>
     </button>
     <button mat-icon-button color="warn" (click)="onDelete(task)">

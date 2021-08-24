@@ -19,6 +19,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
+import { CreateTaskComponent } from './components/create-task/create-task.component';
 
 const appRoutes: Routes = [
   { path: '', component: TasksComponent },
@@ -34,7 +36,8 @@ const appRoutes: Routes = [
     TaskItemComponent,
     AddTaskComponent,
     AboutComponent,
-    FooterComponent
+    FooterComponent,
+    CreateTaskComponent,
   ],
   imports: [
     BrowserModule,
@@ -48,7 +51,8 @@ const appRoutes: Routes = [
     ReactiveFormsModule,
     MatSlideToggleModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

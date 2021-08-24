@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { UiService } from '../../services/ui.service';
 import { Subscription } from 'rxjs';
 import { Router } from '@angular/router';
+import { MatDialog } from '@angular/material/dialog';
+import { CreateTaskComponent } from '../create-task/create-task.component';
 
 @Component({
   selector: 'app-header',
@@ -13,7 +15,8 @@ export class HeaderComponent implements OnInit {
   showAddTask: boolean = false;
   subscription: Subscription;
 
-  constructor(private uiService: UiService, private router: Router) {
+  constructor(private uiService: UiService, private router: Router,
+    private matDialog: MatDialog) {
     this.subscription = this.uiService
       .onToggle()
       .subscribe((value) => (this.showAddTask = value));
@@ -28,5 +31,9 @@ export class HeaderComponent implements OnInit {
 
   hasRoute(route: string) {
     return this.router.url === route;
+  }
+
+  openCreateTaskDialog(): void {
+    this.matDialog.open(CreateTaskComponent);
   }
 }

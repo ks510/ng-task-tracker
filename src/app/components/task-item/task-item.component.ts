@@ -27,4 +27,8 @@ export class TaskItemComponent implements OnInit {
     this.onToggleReminder.emit(task);
   }
 
+  onEdit(task) {
+    console.log("edit button clicked!");
+  }
+
 }
