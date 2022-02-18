@@ -3,6 +3,7 @@
 A glassmorphism-themed app for tracking things to do! Built with Angular 12 for experimental purposes.
 
 ![image](https://user-images.githubusercontent.com/26530973/130369587-c8ce30d1-5a2c-46a2-840c-4435a0642b74.png)
+![image](https://user-images.githubusercontent.com/26530973/154693498-39f0e655-b9c2-4712-be98-49ac0b65014e.png)
 
 ## Features
 
